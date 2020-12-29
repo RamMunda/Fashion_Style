@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner-container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.container-content {
+  position: relative;
+  width: 1214px;
+  margin: 0 0 0 auto;
+  height: 550px;
+  background-image: url("../Image/bg-02.jpg");
+}
+.main-content-pic {
+  position: absolute;
+}
+.main-content-pic > img {
+  max-width: 100%;
+}
+Header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 55px 0px 30px 26px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+Header > headerImg > img {
+  height: 110px;
+}
+Header > headerImg > img:hover {
+  cursor: pointer;
+}
+Header > menu > ul {
+  display: flex;
+  list-style: none;
+}
+Header > menu > ul > li {
+  opacity: 0;
+  transition: 2.5s;
+  padding: 10px 29.5px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+}
+Header > menu > ul > li:hover {
+  cursor: pointer;
+}
+menu {
+  margin-top: 15px;
+}
+SideBarIcon {
+  position: fixed;
+  display: flex;
+  bottom: 70px;
+  flex-direction: column;
+  margin-left: 33px;
+}
+SideBarIcon > i {
+  padding: 15px 15px 40px 15px;
+  font-size: 17px;
+}
+SideBarIcon > i:hover {
+  cursor: pointer;
+}
+.aboutus,
+.ourbrands,
+.ourmodels,
+.workhere,
+.news {
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+.down_sidebar {
+  position: absolute;
+  top: 205px;
+  right: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+}
+.down_sidebar > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.down_sidebar :before {
+  position: absolute;
+  top: 0.3rem;
+  right: 5rem;
+  content: "";
+  height: 2px;
+  width: 150px;
+  background: #0041dc;
+  transform-origin: 0 0;
+  animation: mymove 2s infinite ease;
+}
+bannerContent {
+  position: absolute;
+  top: 249px;
+  right: 123px;
+  width: 550px;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 37px;
+  line-height: 1.3;
+}
+.blue_text {
+  color: #0041dc;
+}
+.black_text {
+  color: black;
+}
+@keyframes mymove {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: 100% 0%;
+  }
+  1% {
+    transform: scaleX(0);
+    opacity: 1;
+    transform-origin: 100% 0%;
+  }
+  49% {
+    transform: scaleX(1);
+    opacity: 1;
+    transform-origin: 100% 0%;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: 0 0%;
+  }
+  99% {
+    transform: scaleX(0);
+    transform-origin: 0 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+    transform-origin: 100% 0%;
+  }
+}
