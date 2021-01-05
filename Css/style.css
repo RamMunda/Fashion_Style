@@ -29,6 +29,7 @@ Header {
   padding: 55px 0px 30px 26px;
   justify-content: space-between;
   box-sizing: border-box;
+  z-index: 1;
 }
 Header > headerImg > img {
   height: 110px;
@@ -43,13 +44,33 @@ Header > menu > ul {
 Header > menu > ul > li {
   opacity: 0;
   transition: 2.5s;
-  padding: 10px 29.5px;
+  padding: 25px 25px 10px 25px;
   font-size: 15px;
   font-weight: 600;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  border-radius: 3px;
+  /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
 }
 Header > menu > ul > li:hover {
   cursor: pointer;
+}
+Header > menu > ul > li:hover ul {
+  display: inline;
+  cursor: pointer;
+  border: 1px solid black;
+}
+Header > menu > ul > li > ul {
+  display: none;
+  list-style: none;
+}
+Header > menu > ul > li > ul > li {
+  padding: 10px 0px;
+  line-height: 1;
 }
 menu {
   margin-top: 15px;
