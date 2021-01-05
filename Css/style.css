@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-display: swap;
+}
 .banner-container {
   display: inline-block;
   width: 100%;
@@ -48,6 +51,7 @@ Header > menu > ul > li {
   font-size: 15px;
   font-weight: 600;
   font-family: "Source Sans Pro", sans-serif;
+
   background-color: white;
   border-radius: 3px;
   /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
