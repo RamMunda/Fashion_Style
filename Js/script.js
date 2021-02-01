@@ -17,5 +17,11 @@ Array.from(unorderList.children).forEach(function(List){
     Array.from(List.children)[0].classList.remove("addclassToUl");
    
 })
+});
+var HeaderTag = document.getElementById('header_content');
+console.log(HeaderTag);
+HeaderTag.addEventListener('scroll',function(e){
+  console.log(e);
 })
-
+var height = window.scrollTop;
+console.log(height);
