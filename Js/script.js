@@ -1,27 +1,29 @@
-console.log("script js");
 var unorderList = document.querySelector('.menu_container');
-console.log(unorderList.children);
 Array.from(unorderList.children).forEach(function(List){
   List.addEventListener('mouseover',function(){
-      console.log("mouse hover...");
       List.classList.add("hoverEffectClass");
       Array.from(List.children)[0].classList.add("addclassToUl");
-    //   Array.from(Array.from(List.children)[0].children).forEach(function(listItem){
-    //      listItem.classList.add('')
-    //   });
-      
+
   })
   List.addEventListener('mouseout',function(){
-    console.log("mouse hover...");
     List.classList.remove("hoverEffectClass");
     Array.from(List.children)[0].classList.remove("addclassToUl");
    
 })
 });
-var HeaderTag = document.getElementById('header_content');
-console.log(HeaderTag);
-HeaderTag.addEventListener('scroll',function(e){
-  console.log(e);
+document.addEventListener('scroll',function(){
+  let k = document.scrollingElement.scrollTop;
+  const headertag = document.getElementById('header_content');
+  const imageTag = document.querySelector('.banner_image');
+  const MenuTag = document.querySelector('.menu');
+  if(k>50){
+    headertag.classList.add('headerAddedCss');
+    imageTag.classList.add('addclassbanner_image');
+    MenuTag.classList.add('menuclasseffect');
+  }
+  else{
+    headertag.classList.remove('headerAddedCss');
+    imageTag.classList.remove('addclassbanner_image');
+    MenuTag.classList.remove('menuclasseffect');
+  }
 })
-var height = window.scrollTop;
-console.log(height);

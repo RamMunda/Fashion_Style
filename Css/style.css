@@ -8,7 +8,7 @@ body {
 .banner-container {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: calc(200vh - 100px);
   background-color: white;
 }
 .container-content {
@@ -149,8 +149,6 @@ bannerContent {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   background-color: white;
 }
-.listItemColour {
-}
 .addclassToUl {
   transition: 0.5s;
   -moz-transition: 0.5s;
@@ -159,6 +157,101 @@ bannerContent {
   opacity: 1;
   color: #656565;
   margin-top: 10px;
+}
+.headerAddedCss {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  padding: 0px 0px 0px 26px;
+  transition: 0.5s;
+}
+.innovation {
+  display: flex;
+  position: relative;
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+.innov_container {
+  display: inline-block;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 250px;
+  padding: 100px;
+}
+.innov_container > p {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0px;
+  color: #0041dc;
+  font-weight: 800;
+}
+.innov_container > h3 {
+  text-align: center;
+  font-size: 45px;
+}
+.innov_content {
+  padding: 0px 20px;
+  text-align: unset;
+  color: lightslategrey !important;
+  font-weight: 100 !important;
+  line-height: 1.5;
+  font-family: system-ui;
+  font-size: 14px !important;
+}
+.innov_content > b {
+  color: black !important;
+}
+.subtitle {
+  position: relative;
+}
+.subtitle::before {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #0041dc;
+}
+.addclassbanner_image {
+  height: 70px;
+  transition: 0.5s;
+}
+.menuclasseffect {
+  margin-top: 0;
+}
+.poweredBy {
+  position: absolute;
+  top: -366px;
+  right: 50px;
+  display: initial;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px;
+}
+.powerbyContinerheading {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+}
+.powerbyContinerpic > img {
+  max-height: 300px;
+}
+.powerbycontentContiner {
+  display: flex;
+}
+.powerbyContinercontent {
+  padding: 20px;
+}
+.powerbyContinerheading > .subtitle::before {
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #0041dc;
 }
 @keyframes mymove {
   0% {
