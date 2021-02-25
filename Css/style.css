@@ -159,8 +159,7 @@ bannerContent {
   margin-top: 10px;
 }
 .headerAddedCss {
-  background-color: black;
-  color: white;
+  background-color: white;
   position: fixed;
   top: 0;
   padding: 0px 0px 0px 26px;
@@ -223,7 +222,7 @@ bannerContent {
 }
 .poweredBy {
   position: absolute;
-  top: -366px;
+  top: -200px;
   right: 50px;
   display: initial;
   font-family: "Source Sans Pro", sans-serif;
@@ -236,7 +235,7 @@ bannerContent {
   max-width: 100%;
 }
 .powerbyContinerpic > img {
-  max-height: 300px;
+  max-width: 450px;
 }
 .powerbycontentContiner {
   display: flex;
@@ -252,6 +251,61 @@ bannerContent {
   width: 20px;
   height: 3px;
   background-color: #0041dc;
+}
+.innov_gallery {
+  position: relative;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+    0 10px 40px rgba(0, 0, 0, 0.1) inset;
+}
+.innov_gallery > img {
+  max-width: 500px;
+}
+.innovcontainer_wrapper {
+  position: absolute;
+  top: -185px;
+  left: 10%;
+}
+.innov_section1_container {
+  display: flex;
+}
+.readmore {
+  display: inline-block;
+  margin-left: 25px;
+  color: #0041dc;
+  font-weight: 800;
+  font-family: monospace;
+  position: relative;
+}
+.readmore::after {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  content: "";
+  width: 65px;
+  height: 3px;
+  background-color: #0041dc;
+}
+.readmore::before {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  content: "";
+  width: 65px;
+  height: 3px;
+  background-color: #0041dc;
+}
+.readmore:hover {
+  cursor: pointer;
+}
+.readmore:hover::before {
+  transform-origin: 50% 0;
+  scale: 1.5;
+  transition: 0.5s;
+  transform: translateY(-25px);
 }
 @keyframes mymove {
   0% {
